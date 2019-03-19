@@ -251,3 +251,125 @@ footer{
     -ms-flex-pack: center;
     justify-content: center;
 }
+.content-fix{
+	background: #DDE3EB;
+}
+.box-phi{
+	margin-bottom: 20px;
+	background: #fff;
+	padding:20px;
+	margin-top: 20px;
+	width: 100%;
+	float: left;
+}
+.box-phi p{
+	font-size: 16px;
+}
+.content-app{
+	width: 100%;
+	float: left;
+	color: #6A6C6F;
+}
+.content-app .item{
+	width: 100%;
+	float: left;
+	border-top: 1px solid grey;
+	padding-top: 15px;
+	margin-bottom: 15px;
+	color: #6A6C6F;
+}
+.title-app{
+	font-family: Myria;
+	font-size: 26px;
+	font-weight: bold;
+	color: #6A6C6F;
+}
+.content-app .item .pull-left{
+	font-weight: 600px;
+	font-size: 17px;
+	font-family: Myria;
+}
+.btn-download-app{
+	color: #fff;
+    background-color: #74D348;
+    border-color: #74D348;
+    padding:10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#side-menu .panel-group .panel+.panel{
+	margin-top: 0px;
+}
+#side-menu .panel{
+	/*border:none !important;*/
+	border-radius: 0px !important;
+	border-bottom: 1px solid #eaeaea;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+#side-menu .panel-default{
+	/*border-color: #fff !important;*/
+}
+#side-menu, .content-huongdan {
+    background: #f7f9fa;
+}
+#side-menu li {
+    border-bottom: 1px solid #eaeaea;
+}
+#side-menu li:first-child {
+    border-top: 1px solid #eaeaea;
+}
+#side-menu a {
+    color: #6a6c6f;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 20px;
+}
+#side-menu .panel-body{
+	padding:10px;
+}
+#side-menu .panel-body p{
+	margin-bottom: 5px;
+}
+#side-menu .panel-body a{
+	padding: 10px 10px 10px 30px;
+    color: #6a6c6f;
+    text-transform: none;
+    font-weight: 600;
+}
+#side-menu li .nav-second-level li a {
+    padding: 10px 10px 10px 30px;
+    color: #6a6c6f;
+    text-transform: none;
+    font-weight: 600;
+}
+.mrt-20{
+	margin-top: 20px;
+}
+.mrb-20{
+	margin-bottom: 20px;
+}
+.content-huongdan{
+	padding:15px;
+}
+.content-huongdan h1{
+	font-weight: bold;
+}
+.content-huongdan p{
+	font-size: 16px;
+}
+.register-container {
+    max-width: 720px;
+    margin: auto;
+    padding-top: 6%;
+}
+.hpanel .panel-body {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+}
+.hpanel{
+	margin-bottom: 20px;
+}

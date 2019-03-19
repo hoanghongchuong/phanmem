@@ -16,6 +16,9 @@
 		padding-top: 0px;
 		padding-right: 10px;
 	}
+	.content-app .item .pull-left{
+		width: 68%;
+	}
 }
 @media (min-width: 768px) {
 	.carousel-indicators{
@@ -41,5 +44,7 @@
 	}
 }
 @media (min-width: 1200px){
-	
+	.pdl-fix{
+		padding-left: 45px;
+	}
 }
