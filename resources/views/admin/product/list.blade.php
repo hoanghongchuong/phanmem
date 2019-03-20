@@ -48,10 +48,10 @@
               <tr>
                 <th style="width: 20px;"><input type="checkbox" name="chonhet" class="minimal" id="chonhet" /></th>
                 <th class="text-center with_dieuhuong">Stt</th>
-                <th>Danh mục</th>
+                <!-- <th>Danh mục</th> -->
                 <th>Tên sản phẩm</th>               
                 <th>Hình ảnh</th>
-                <th>Giá</th>
+                <!-- <th>Giá</th> -->
                 <th class="text-center with_dieuhuong">Hoạt động</th>
                 <th class="text-center with_dieuhuong">Sửa</th>
                 <th class="text-center with_dieuhuong">Xóa</th>
@@ -62,7 +62,7 @@
               <tr>
                 <td><input type="checkbox" name="chon" id="chon" value="{{$item->id}}" class="chon" /></td>
                 <td class="text-center with_dieuhuong">{{$k+1}}</td>
-                <td>
+                <!-- <td>
                   <?php  $parent = DB::table('product_categories')->where('id', $item->cate_id)->first();
                   ?>
                   @if(!empty($parent))
@@ -70,7 +70,7 @@
                   @else
                     {{ 'None' }}
                   @endif
-                </td>
+                </td> -->
                 <td>
                   {{$item->name}}
                 </td>
@@ -78,7 +78,7 @@
                 <td>
                   <img src="{{ asset('upload/product/'.$item->photo) }}" onerror="this.src='{{ asset('public/admin_assets/images/no-image.jpg') }}';" class="img_product"  alt="NO PHOTO" />
                 </td>
-                <td>{{number_format($item->price)}}</td>
+                <!-- <td>{{number_format($item->price)}}</td> -->
                 <td class="text-center with_dieuhuong">
                   <div class="form-group"> 
                     @if($item->status>0)

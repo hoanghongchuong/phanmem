@@ -23,7 +23,7 @@
                 <div class="col-md-3">
                     <ul class="regis">
                         <li><a href="">Đăng nhập</a></li>
-                        <li><a href="">Đăng ký</a></li>
+                        <li><a href="{{url('dang-ky')}}">Đăng ký</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,11 +31,11 @@
     </div>
     <div class="visible-xs visible-sm">
         <div class="hedaer-mobile">
-            <div class="" style="text-align: center;"><a href="" title=""><img src="images/logo.png" alt=""></a></div>
+            <div class="" style="text-align: center;"><a href="{{url('')}}" title=""><img src="{{asset('upload/hinhanh/'.$setting->photo)}}" alt=""></a></div>
             <div class="pull-right" style="margin-top: 20px; margin-left: 5px;">
                 <ul class="regis">
                     <li><a href="">Đăng nhập</a></li>
-                    <li><a href="">Đăng ký</a></li>
+                    <li><a href="{{url('dang-ky')}}">Đăng ký</a></li>
                 </ul>
             </div>
         </div>

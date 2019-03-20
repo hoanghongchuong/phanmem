@@ -13,6 +13,15 @@ $(document).ready(function () {
 	    $('html, body').animate({
 	      scrollTop: $("#header").offset().top
 	    }, 1000)
-	})
+	});
+
+	// $('.btn-submit').on('click', function(){
+		
+	// 	$('#contact-form').submit();
+	// });
+
+
+
+
 });
 

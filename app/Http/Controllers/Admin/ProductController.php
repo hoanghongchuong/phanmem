@@ -40,7 +40,7 @@ class ProductController extends Controller
         $data = Products::where('com',$com)->get();
         $parent = ProductCate::where('com',$com)->get();
         
-        return view('admin.product.add', compact('data','parent','theloai','tacgia','nxb', 'availableTags'));
+        return view('admin.product.add', compact('data','parent'));
     }
     public function postAdd(ProductRequest $request)
     {

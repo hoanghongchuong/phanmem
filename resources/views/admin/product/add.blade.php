@@ -52,7 +52,7 @@
 								      	@endif
 									</div>
 									<div class="clearfix"></div>
-									<div class="form-group">
+									<div class="form-group hidden">
 								      	<label for="ten">Danh mục cha</label>
 								      	<select name="txtProductCate" class="form-control">
 
@@ -74,7 +74,7 @@
 								      	<label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('txtAlias'); !!}</label>
 								      	@endif
 									</div>
-									<div class="form-group">
+									<div class="form-group hidden">
 								      	<label for="ten">Giá bán</label>
 								      	<input type="text" name="txtPrice"  onkeyup="FormatNumber(this);"  onKeyPress="return isNumberKey(event)" value=""  class="form-control" />
 									</div>

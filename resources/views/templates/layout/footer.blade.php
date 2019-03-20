@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-xs-12" id="contact">
-                <form action="{{route('postContact')}}" method="post" accept-charset="utf-8">
+                <form action="{{route('postContact')}}" id="contact-form" method="post" accept-charset="utf-8">
                     {{csrf_field()}}
                     <div class="form-group">
                        <label for="">Name:</label>
@@ -24,7 +24,8 @@
                        <textarea name="" class="form-control" required="" rows="5" cols="20"></textarea>
                     </div>
                     <div class="btn-send">
-                        <a href="javscript:;" title="" class="btn-submit"><img src="{{asset('public/images/send.png')}}" alt=""></a>
+                        <!-- <a href="javscript:;" title="" class="btn-submit"><img src="{{asset('public/images/send.png')}}" alt=""></a> -->
+                        <button type="submit" class="btn-submit">Send</button>
                     </div>
                 </form>
             </div>

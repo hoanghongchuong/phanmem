@@ -361,7 +361,7 @@ footer{
 .register-container {
     max-width: 720px;
     margin: auto;
-    padding-top: 6%;
+    /*padding-top: 6%;*/
 }
 .hpanel .panel-body {
     background: #fff;
@@ -372,4 +372,11 @@ footer{
 }
 .hpanel{
 	margin-bottom: 20px;
+}
+.btn-submit{
+	width: 80px;
+	height: 40px;
+	background: #1883C5;
+	color: #fff;
+	border:none;
 }

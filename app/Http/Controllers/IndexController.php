@@ -40,8 +40,7 @@ class IndexController extends Controller {
     	$setting = DB::table('setting')->select()->where('id',1)->get()->first();
     	
     	$about = DB::table('about')->where('com','gioi-thieu')->get();
-    	Cache::forever('setting', $setting);
-        
+    	Cache::forever('setting', $setting);        
 	}
 
 	/**
@@ -53,13 +52,15 @@ class IndexController extends Controller {
 	{
 		
 		$setting = DB::table('setting')->select()->where('id',1)->get()->first();
+		$quytrinh = DB::table('about')->where('com','quy-trinh')->first();
+		$products = Products::where('com','san-pham')->where('status',1)->orderBy('id','desc')->get();
 		$title = $setting->title;
 		$keyword = $setting->keyword;
 		$description = $setting->description;		
 		$com = 'index';
 		// End cấu hình SEO
 		$img_share = asset('upload/hinhanh/'.$setting->photo);
-		return view('templates.index_tpl', compact('com','keyword','description','title','img_share'));
+		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','quytrinh','products'));
 	}
 	public function getProduct(Request $req)
 	{
