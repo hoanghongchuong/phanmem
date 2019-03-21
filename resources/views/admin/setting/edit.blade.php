@@ -85,22 +85,22 @@
 								      	<label for="ten">Facebook</label>
 								      	<input type="text" name="txtFacebook" value="{!! old('txtFacebook', isset($data) ? $data->facebook : null) !!}"  class="form-control" />
 									</div>
-									<!-- <div class="form-group">
+									<div class="form-group">
 								      	<label for="ten">Twitter</label>
 								      	<input type="text" name="txtTwitter" value="{!! old('txtTwitter', isset($data) ? $data->twitter : null) !!}"  class="form-control" />
-									</div> -->
+									</div>
 									<div class="form-group">
 								      	<label for="ten">Google</label>
 								      	<input type="text" name="txtGoogle" value="{!! old('txtGoogle', isset($data) ? $data->google : null) !!}"  class="form-control" />
 									</div>
-									<!-- <div class="form-group">
-								      	<label for="ten">Skype</label>
+									<div class="form-group">
+								      	<label for="ten">pinterest</label>
 								      	<input type="text" name="txtSkype" value="{!! old('txtSkype', isset($data) ? $data->skype : null) !!}"  class="form-control" />
-									</div> -->
-									<!-- <div class="form-group">
-								      	<label for="ten">Youtube</label>
+									</div>
+									<div class="form-group">
+								      	<label for="ten">linkedin</label>
 								      	<input type="text" name="txtYoutube" value="{!! old('txtYoutube', isset($data) ? $data->youtube : null) !!}"  class="form-control" />
-									</div> -->
+									</div>
 									<div class="form-group">
 								      	<label for="desc">Code chat</label>
 								      	<textarea name="txtCodechat" rows="5" class="form-control">{{ old('txtCodechat', isset($data) ? $data->codechat : null) }}</textarea>

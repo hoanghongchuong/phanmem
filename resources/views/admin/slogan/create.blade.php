@@ -32,23 +32,22 @@
                     @endif
               </div>
                   
-              <div class="form-group col-md-12 @if ($errors->first('fImages')!='') has-error @endif">
+              <!-- <div class="form-group col-md-12 @if ($errors->first('fImages')!='') has-error @endif">
                 <label for="file">Chọn ảnh 2</label>
                   <input type="file" id="file" name="fImages2" >
                   <p class="help-block">Width:225px - Height: 162px</p>
                   @if ($errors->first('fImages')!='')
                     <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('fImages'); !!}</label>
                     @endif
-              </div>             
+              </div>   -->           
             <div class="clearfix"></div>
             
-            <!-- <div class="col-md-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="">Tên</label>
                 <input type="text" name="txtName" class="form-control" value="">
-              </div>
-              
-            </div> -->
+              </div>              
+            </div>
             <!-- <div class="col-md-6">
               <div class="form-group">
                 <label for="">Link</label>
@@ -63,7 +62,7 @@
 	              </div>
             </div>
           <div class="clearfix"></div>
-          <div class="form-group">
+          <div class="form-group hidden">
                 <label for="ten">Số thứ tự</label>
                 <input type="number" min="1" name="stt" value="{!! count($data)+1 !!}" class="form-control" style="width: 100px;">
             </div>

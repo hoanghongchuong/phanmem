@@ -53,6 +53,8 @@ class IndexController extends Controller {
 		
 		$setting = DB::table('setting')->select()->where('id',1)->get()->first();
 		$quytrinh = DB::table('about')->where('com','quy-trinh')->first();
+		$about_mota = DB::table('about')->where('com','san-pham')->first();
+		$loiich = DB::table('slogan')->get();
 		$products = Products::where('com','san-pham')->where('status',1)->orderBy('id','desc')->get();
 		$title = $setting->title;
 		$keyword = $setting->keyword;
@@ -60,7 +62,7 @@ class IndexController extends Controller {
 		$com = 'index';
 		// End cấu hình SEO
 		$img_share = asset('upload/hinhanh/'.$setting->photo);
-		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','quytrinh','products'));
+		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','quytrinh','products','about_mota','loiich'));
 	}
 	public function getProduct(Request $req)
 	{

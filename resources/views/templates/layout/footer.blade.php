@@ -33,10 +33,10 @@
                 <div class="name-title">Liên hệ</div>
                 <p style="text-align: center;"><img src="{{asset('public/images/ngang.png')}}" alt="" class="ngang"></p>
                 <div class="list-social">
-                   <a href="" title=""><img src="{{asset('public/images/facebook.png')}}" alt=""></a>
-                   <a href="" title=""><img src="{{asset('public/images/twitter.png')}}" alt=""></a>
-                   <a href="" title=""><img src="{{asset('public/images/prinet.png')}}" alt=""></a>
-                   <a href="" title=""><img src="{{asset('public/images/in.png')}}" alt=""></a>
+                   <a href="{{$setting->facebook}}" target="_blank" title=""><img src="{{asset('public/images/facebook.png')}}" alt=""></a>
+                   <a href="{{$setting->twitter}}" target="_blank" title=""><img src="{{asset('public/images/twitter.png')}}" alt=""></a>
+                   <a href="{{$setting->skype}}" title="" target="_blank"><img src="{{asset('public/images/prinet.png')}}" alt=""></a>
+                   <a href="{{$setting->youtube}}" title="" target="_blank"><img src="{{asset('public/images/in.png')}}" alt=""></a>
                 </div>
                 <h4>Address:</h4>
                 <p>{{$setting->address}}</p>

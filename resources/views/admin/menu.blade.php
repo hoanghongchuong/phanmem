@@ -3,17 +3,19 @@
     <section class="sidebar">
         <ul class="sidebar-menu">
             <!-- <li class="header">MAIN NAVIGATION</li> -->            
-            <!-- <li class="treeview {{@$_GET['type'] == 'san-pham' ? 'active' : '' }}">
+            <li class="treeview {{@$_GET['type'] == 'san-pham' ? 'active' : '' }}">
               <a href="#">
                 <i class="fa fa-dashboard"></i> <span>Sản phẩm</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="backend/productcate?type=san-pham"><i class="fa fa-circle-o"></i> <span>Danh mục sản phẩm</span></a></li>
-                              
+                <!-- <li><a href="backend/productcate?type=san-pham"><i class="fa fa-circle-o"></i> <span>Danh mục sản phẩm</span></a></li> -->
+                <li><a href="backend/product?type=san-pham"><i class="fa fa-circle-o"></i> <span>Phần cứng</span></a></li>
+                <li><a href="backend/about/edit?type=san-pham"><i class="fa fa-circle-o"></i> <span>Mô tả</span></a></li>               
               </ul>
-            </li> -->
-            <li><a href="backend/product?type=san-pham"><i class="fa fa-circle-o"></i> <span>Phần cứng</span></a></li> 
+            </li>
+
             <li><a href="backend/about/edit?type=service"><i class="fa fa-circle-o"></i> <span>Phí dịch vụ</span></a></li>
+            <li><a href="backend/slogan"><i class="fa fa-circle-o"></i> <span>Lợi ích</span></a></li>
             <li><a href="backend/about/edit?type=quy-trinh"><i class="fa fa-circle-o"></i> <span>Quy trình</span></a></li>
             <!-- <li><a href="backend/news?type=tin-tuc"><i class="fa fa-circle-o"></i> <span>Tin tức</span></a></li> -->
             <!-- <li><a href="backend/partner"><i class="fa fa-circle-o"></i> <span>Quản lý đối tác</span></a></li> -->

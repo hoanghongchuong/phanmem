@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="form-group ">
+            <!-- <div class="form-group ">
                 <div class="form-group" >
                   <div class="form-group">
                     <img src="{{ asset('upload/hinhanh/'.@$slogan->photo2) }}" onerror="this.src='{{asset('public/admin_assets/images/no-image.jpg')}}'" width="200"  alt="NO PHOTO" />
@@ -46,16 +46,15 @@
                     <input type="file" id="file" name="fImages2" >
                     <p class="help-block">Width:225px - Height: 162px</p>
                 </div>
-            </div>
+            </div> -->
 
-            <!-- <div class="col-md-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="">Tên</label>
                 <input type="text" name="txtName" class="form-control" value="{{$slogan->name}}">
-              </div>
-              
+              </div>              
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
                 <div class="form-group">
                   <label for="">Link</label>
                   <input type="text" name="link" class="form-control" value="{{$slogan->link}}">
@@ -67,10 +66,13 @@
 	                <textarea name="content" id="txtContent" cols="30" rows="10">{{$slogan->content}}</textarea>
 	              </div>
             </div>
-            <div class="form-group">
-                <label for="ten">Số thứ tự</label>
-                <input type="number" min="1" name="stt" value="{!! isset($slogan->stt) ? $slogan->stt : (count($stt)+1) !!}" class="form-control" style="width: 100px;">
+            <div class="col-md-12">
+              <div class="form-group hidden">
+                  <label for="ten">Số thứ tự</label>
+                  <input type="number" min="1" name="stt" value="{!! isset($slogan->stt) ? $slogan->stt : (count($stt)+1) !!}" class="form-control" style="width: 100px;">
+              </div>
             </div>
+            
           <div class="clearfix"></div>
           <div class="box-footer">
             <div class="row">
